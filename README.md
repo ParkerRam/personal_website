@@ -1,2 +1,2 @@
-# Personal_Website
-A repo to learn Flask which will eventually turn into a repo for my personal website!
+# personal_website
+A repo to learn Flask which will eventually turn into my personal website!
