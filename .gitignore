@@ -1,4 +1,4 @@
 
 *.DS_*
-_pycache_
+__pycache__
 .vscode
