@@ -5,8 +5,7 @@ $(function() {
         "><span class='caret'>$</span> education: University of British Columbia - BSc. Statistics (Year 4)<br/> ^100" +
         "><span class='caret'>$</span> interests: data analytics, data science, software development<br/> ^300" +
         "><span class='caret'>$</span> hobbies: powerlifting, soccer, hockey<br/> ^300" +
-        "><span class='caret'>$</span> current job: Data Analyst Co-op at FreshBooks<br/> ^100" +
-        "><span class='caret'>$</span> <a href='http://www.github.com/ParkerRam'>Github</a> <a href='http://in.linkedin.com/in/parker-ram'>Linkedin</a><br/>"
+        "><span class='caret'>$</span> current job: Data Analyst Co-op at FreshBooks<br/> ^100"
       ],
       showCursor: true,
       cursorChar: '_',

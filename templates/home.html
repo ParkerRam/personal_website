@@ -1,17 +1,17 @@
 {% extends "base.html" %}
 
-{% block head %}
-  {% block styles %}
-    {{super()}}
-    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/home.css') }}">
-  {% endblock %}
+{% block styles %}
+  {{super()}}
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/home.css') }}">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+{% endblock styles %}
 
-  {%block scripts %}
-    {{super()}}
-    <script type="text/javascript" src="{{ url_for('static', filename = 'js/home.js') }}"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js'></script>
-  {% endblock %}
-{% endblock %}
+{%block scripts %}
+  {{super()}}
+  <script type="text/javascript" src="{{ url_for('static', filename = 'js/home.js') }}"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js'></script>
+{% endblock scripts %}
+
 
 {% block content %}
   <div class="container">
@@ -38,8 +38,21 @@
           </section>
       </div>
       <div id="text" class="wrapper fixed-wrapper">
-          <div class="top-text">
-            <p class="text-title desktop-view">Parker Ram</p>
+        <div class="top-text">
+          <b id="name-headline" class="top-text">PARKER RAM</b>
+          <a id="git" class="white-text landing-page-icon" href="https://www.github.com/ParkerRam" target="_blank"><i class="fab fa-github" aria-hidden="true">&nbsp</i></a>
+          <a id="link" class="white-text landing-page-icon" href="https://www.linkedin.com/in/parker-ram" target="_blank"><i class="fab fa-linkedin" aria-hidden="true">&nbsp</i> </a>
+          <a id="ig" class="white-text landing-page-icon" href="https://www.instagram.com/parker.ram" target="_blank"><i class="fab fa-instagram" aria-hidden="true">&nbsp</i> </a>
+        </div>
+        <div class="middle-text">
+            <p class="text-content">
+              I'm currently an undergraduate student at the University of British Columbia studying statistics and self-learning software development.
+              During my co-op terms i'm hoping to explore the fields of data science and software development to learn as much as I can!
+            </p>
+            <p class="text-content">
+              During my free time I weight lift and compete in powerlifting, what got me hooked is the tangible results seen from hard work and dedication.
+              I also enjoy spending time hiking with friends and exploring British Columbia!
+            </p>
           </div>
       </div>
   </div>
