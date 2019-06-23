@@ -1,19 +1,23 @@
 {% extends "bootstrap/base.html" %}
 
-{% block title %}Parker Ram{% endblock %}
-
-{% block styles %}
-{{super()}}
-<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/base.css') }}">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Source+Code+Pro:400,500,600,700' type='text/css' media='screen'/>
-{% endblock styles %}
+{% block head %}
+    {% block title %}Parker Ram{% endblock %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block styles %}
+        {{super()}}
+        <link rel="icon" href="/static/images/icons8-user-male-64.png">
+        <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/base.css') }}">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:900" rel="stylesheet">
+    {% endblock styles %}
+{% endblock head %}
 
 {% block navbar %}
-<div class="navbar-ul">
-    <ul id="navbar-list" class="list-inline">
-        <li><a class="navbar-ref" href="/">Home</a></li>
-        <li><a class="navbar-ref" href="/projects">Projects</a></li>
-        <li><a class="navbar-ref" href="/experience">Experience</a></li>
-    </ul>
-</div>
+    <div class="navbar-ul">
+        <ul id="navbar-list" class="list-inline">
+            <li><a class="navbar-ref" href="/">Home</a></li>
+            <li><a class="navbar-ref" href="/projects">Projects</a></li>
+            <li><a class="navbar-ref" href="/experience">Experience</a></li>
+        </ul>
+    </div>
 {% endblock navbar %}

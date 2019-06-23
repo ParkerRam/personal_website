@@ -1,4 +1,46 @@
 {% extends "base.html" %}
+
+{% block head %}
+  {% block styles %}
+    {{super()}}
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/home.css') }}">
+  {% endblock %}
+
+  {%block scripts %}
+    {{super()}}
+    <script type="text/javascript" src="{{ url_for('static', filename = 'js/home.js') }}"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js'></script>
+  {% endblock %}
+{% endblock %}
+
 {% block content %}
-  <h1>Hello, Bootstrap</h1>
-{% endblock %}ß
+  <div class="container">
+      <div id="box" class="wrapper fixed-wrapper">
+          <section id="terminal">
+              <div id="terminal-container">
+                  <div class="terminal">
+                      <div class="window-title">
+                          <div class="win-buttons">
+                              <a id="close" class="button" href="#"></a>
+                              <a id="min" class="button" href="#"></a>
+                              <a id="max" class="button" href="#"></a>
+                          </div>
+                          <span class="title">parkerram -- -bash -- 80x24</span>
+                      </div>
+                      <div class="message">
+                          <span class='prompt'><span class='user'>parkerram</span><span class="at">@</span>
+                          <span class="path">/home/pram/</span>><span class="caret">$</span></span>
+                          <span class="typed"></span>
+                          <form>><span class="caret">$</span>&nbsp;<input type="text" name="response"></input></form>
+                      </div>
+                  </div>
+              </div>
+          </section>
+      </div>
+      <div id="text" class="wrapper fixed-wrapper">
+          <div class="top-text">
+            <p class="text-title desktop-view">Parker Ram</p>
+          </div>
+      </div>
+  </div>
+{% endblock %}
