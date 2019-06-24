@@ -29,12 +29,12 @@ body {
 }
 
 #name-headline {
-  font-size: 80px;
+  font-size: 550%;
   font-family: 'Roboto', sans-serif;
   color: rgba(15, 12, 12, 0.8);
 }
 
-#git i {
+.landing-page-icon i {
   background: white;
   color: rgba(15, 12, 12, 0.8);
   -webkit-transition: all 0.4s;
@@ -42,56 +42,16 @@ body {
   -o-transition: all 0.4s;
   transition: all 0.4s;
   vertical-align: 50%;
-  padding-left: 15px;
+  padding-left: 2%;
   font-size: 250%;
 }
 
-#git i:hover {
-  color: rgb(190, 185, 185);
-}
-
-#link i {
-  background: white;
-  color: rgba(15, 12, 12, 0.8);
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
-  vertical-align: 50%;
-  padding-left: 15px;
-  font-size: 250%;
-}
-
-#link i:hover {
-  color: rgb(190, 185, 185);
-}
-
-#ig i {
-  background: white;
-  color: rgba(15, 12, 12, 0.8);
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
-  vertical-align: 50%;
-  padding-left: 15px;
-  font-size: 250%;
-}
-
-#ig i:hover {
+.landing-page-icon i:hover {
   color: rgb(190, 185, 185);
 }
 
 .text-content {
   padding-right:  3%;
-}
-
-.mobile-view {
-  display: none;
-}
-
-.desktop-view {
-    display: block;
 }
 
 #terminal #terminal-container .overlay {
@@ -118,12 +78,12 @@ body {
   text-align: center;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  padding: 1px 8px;
+  padding: 1% 1%;
 }
 #terminal .terminal .window-title .win-buttons {
   position: relative;
   width: 15%;
-  left: -11px;
+  left: -3%;
   float: left;
   margin: 0;
 }
@@ -221,54 +181,4 @@ body {
 #terminal a:hover {
   color: rgba(255, 255, 255, 0.9);
   border-bottom: 1px dotted rgba(255, 255, 255, 0.9);
-}
-
-@media only screen and (max-width: 1094px) {
-  .fixed-wrapper {
-    position: static;
-  }
-  .container {
-    flex-direction: column;
-  }
-  .wrapper {
-    width: 100%;
-  }
-  .mobile-view {
-    display: block;
-  }
-  .desktop-view {
-    display: none;
-  }
-  .top-text {
-    min-height: fit-content;
-  }
-  .wrapper.fixed-wrapper {
-    min-height: calc(100vh - 190px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #terminal {
-    width: 100%;
-  }
-  .scroll-wrapper {
-    align-items: center;
-  }
-  .top-text p {
-    font-size: 70px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  
-  #terminal .terminal .window-title .win-buttons{
-    width: 60px;
-  }
-  .top-text p {
-    font-size: 40px;
-  }
-
-  #terminal .terminal {
-    height: 400px;
-  }
 }
