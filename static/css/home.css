@@ -34,7 +34,7 @@ body {
   color: rgba(15, 12, 12, 0.8);
 }
 
-.landing-page-icon i {
+#git i {
   background: white;
   color: rgba(15, 12, 12, 0.8);
   -webkit-transition: all 0.4s;
@@ -46,8 +46,39 @@ body {
   font-size: 250%;
 }
 
+#git i:hover {
+  color: rgb(190, 185, 185);
+}
 
-.landing-page-icon i:hover {
+#link i {
+  background: white;
+  color: rgba(15, 12, 12, 0.8);
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  vertical-align: 50%;
+  padding-left: 2%;
+  font-size: 250%;
+}
+
+#link i:hover {
+  color: rgb(190, 185, 185);
+}
+
+#ig i {
+  background: white;
+  color: rgba(15, 12, 12, 0.8);
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  vertical-align: 50%;
+  padding-left: 2%;
+  font-size: 250%;
+}
+
+#ig i:hover {
   color: rgb(190, 185, 185);
 }
 
