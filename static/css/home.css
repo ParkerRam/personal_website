@@ -78,7 +78,7 @@ body {
   text-align: center;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  padding: 1% 1%;
+  padding: 0.25% 0.5%;
 }
 #terminal .terminal .window-title .win-buttons {
   position: relative;
@@ -113,7 +113,7 @@ body {
   position: relative;
   display: inline-block;
   color: rgba(255, 255, 255, 0.65);
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.06em;
   text-align: center;
