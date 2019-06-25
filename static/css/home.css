@@ -94,6 +94,7 @@ body {
   top: 0;
   opacity: 0.3;
 }
+
 #terminal .terminal {
   position: relative;
   background: rgba(38, 38, 38, 0.8);

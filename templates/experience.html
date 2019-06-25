@@ -1,4 +1,30 @@
 {% extends "base.html" %}
+
+{% block styles %}
+  {{super()}}
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/experience.css') }}">
+{% endblock styles %}
+
 {% block content %}
-  <h1>Experience</h1>
+<div class="container-fluid">
+
+  <div class="row">
+    <div class="col-sm-6 col-md-6 col-lg-6">
+      GRAPHIC
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-6">
+      TEXT
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6 col-md-6 col-lg-6">
+      GRAPHIC
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-6">
+      TEXT
+    </div>
+  </div>
+
+</div>
 {% endblock content %}

@@ -1,4 +1,38 @@
 {% extends "base.html" %}
+
+{% block styles %}
+  {{super()}}
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/projects.css') }}">
+{% endblock styles %}
+
 {% block content %}
-  <h1>Projects</h1>
-{% endblock content%}
+<div class="container-fluid">
+
+  <div class="row">
+    <div class="col-sm-4 col-md-6 col-lg-4">
+      GRAPHIC
+    </div>
+    <div class="col-sm-8 col-md-6 col-lg-8">
+      TEXT
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-8 col-md-6 col-lg-8">
+      TEXT
+    </div>
+    <div class="col-sm-4 col-md-6 col-lg-4">
+      GRAPHIC
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4 col-md-6 col-lg-4">
+      GRAPHIC
+    </div>
+    <div class="col-sm-8 col-md-6 col-lg-8">
+      TEXT
+    </div>
+  </div>
+</div>
+{% endblock content %}
