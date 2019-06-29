@@ -1,217 +1,50 @@
-body {
-  height:100vh;
-  font-family: 'Open Sans', sans-serif;
+body, html {
+  height: 100%;
 }
 
-.container {
-  height: 90%;
-  max-width: none;
-  margin:0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+.hero-image {
+  background-image: url("../images/bc-2297205.jpg");
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
-.wrapper{
-  width: 50%;
-}
-
-#box {
-  position: fixed;
-  right: 50%;
-  top: calc(50% - 135px);
-}
-
-#text {
-  position: fixed;
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
   left: 50%;
-  top: calc(50% - 135px);
+  transform: translate(-50%, -50%);
+  color: rgb(233, 233, 233);
 }
 
 #name-headline {
-  font-size: 550%;
-  font-family: 'Roboto', sans-serif;
-  color: rgba(15, 12, 12, 0.8);
+  font-size: 400%;
 }
 
-#git i {
-  background: white;
-  color: rgba(15, 12, 12, 0.8);
+.landing-page-icon i {
+  color: rgb(233, 233, 233);
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
-  vertical-align: 50%;
   padding-left: 2%;
-  font-size: 250%;
+  font-size: 200%;
 }
 
-#git i:hover {
-  color: rgb(190, 185, 185);
+.landing-page-icon i:hover {
+  color: rgb(136, 136, 136);
 }
 
-#link i {
-  background: white;
-  color: rgba(15, 12, 12, 0.8);
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
-  vertical-align: 50%;
-  padding-left: 2%;
-  font-size: 250%;
+#resume {
+  color: rgb(233, 233, 233);
+  font-size: 110%;
 }
 
-#link i:hover {
-  color: rgb(190, 185, 185);
-}
-
-#ig i {
-  background: white;
-  color: rgba(15, 12, 12, 0.8);
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
-  vertical-align: 50%;
-  padding-left: 2%;
-  font-size: 250%;
-}
-
-#ig i:hover {
-  color: rgb(190, 185, 185);
-}
-
-.text-content {
-  padding-right:  3%;
-}
-
-#terminal #terminal-container .overlay {
-  position: absolute;
-  background-color: #FFF;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  opacity: 0.3;
-}
-
-#terminal .terminal {
-  position: relative;
-  background: rgba(38, 38, 38, 0.8);
-  width: 90%;
-  height: 260px;
-  border-radius: 8px;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.55);
-  margin: auto;
-}
-#terminal .terminal .window-title {
-  background: linear-gradient(top, #dedede, #c0c0c0);
-  width: calc(100% - 16px);
-  height: 8%;
-  text-align: center;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  padding: 0.25% 0.5%;
-}
-#terminal .terminal .window-title .win-buttons {
-  position: relative;
-  width: 15%;
-  left: -3%;
-  float: left;
-  margin: 0;
-}
-#terminal .terminal .window-title .button {
-  display: inline-block;
-  text-align: center;
-  width: 10px;
-  height: 10px;
-  border: 0.5px solid;
-  border-radius: 100px;
-  vertical-align: middle;
-  margin: 3px 2px 3px 0;
-}
-#terminal .terminal .window-title #close {
-  background: #e25544;
-  border-color: #d84b3a;
-}
-#terminal .terminal .window-title #min {
-  background: #f5b640;
-  border-color: #e0a12b;
-}
-#terminal .terminal .window-title #max {
-  background: #7cb058;
-  border-color: #6fa44b;
-}
-#terminal .terminal .title {
-  position: relative;
-  display: inline-block;
-  color: rgba(255, 255, 255, 0.65);
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0.06em;
-  text-align: center;
-  vertical-align: middle;
-  top: 0.5px;
-  left: -43px;
-}
-#terminal .terminal .prompt {
-  font-size: 98%;
-}
-#terminal .terminal .user {
-  color: #ea7e7d;
-  letter-spacing: 0.002em;
-  padding-right: 3px;
-}
-#terminal .terminal .at {
-  color: #e8d880;
-  padding-right: 2px;
-}
-#terminal .terminal .path {
-  color: #7ecdcb;
-  letter-spacing: 0.002em;
-  padding-right: 2px;
-}
-#terminal .terminal .caret {
-  color: #50cd70;
-}
-#terminal .message {
-  position: relative;
-  color: rgba(255, 255, 255, 0.75);
-  font-size: 14px;
-  font-family: "Source Code Pro", monospace;
-  width: 95%;
-  margin: auto;
-  padding: 1.5vh 0 0;
-  z-index: 999;
-}
-#terminal .message span {
-  font-size: 90%;
-  font-weight: 300;
-  line-height: 1.5;
-  letter-spacing: 0.045em;
-  margin-bottom: 1em;
-}
-#terminal .message span a {
-  font-family: "Source Code Pro", monospace;
-  border-bottom: 1px dotted rgba(255, 255, 255, 0.75);
-}
-#terminal .message form input {
-  background: transparent;
-  border: none;
-  outline: none;
-  caret-color: #50cd70;
-}
-#terminal .message form input:focus {
-  color: rgba(255, 255, 255, 0.75);
-}
-#terminal .message .typed-cursor {
-  color: rgba(255, 255, 255, 0.9);
-}
-#terminal a {
-  color: rgba(255, 255, 255, 0.7);
+#resume:hover {
+  color: rgb(136, 136, 136);
   text-decoration: none;
-}
-#terminal a:hover {
-  color: rgba(255, 255, 255, 0.9);
-  border-bottom: 1px dotted rgba(255, 255, 255, 0.9);
 }

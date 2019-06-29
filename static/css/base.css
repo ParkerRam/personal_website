@@ -3,26 +3,27 @@ body {
     height: 100vh;
     font-family: 'Open Sans', sans-serif;
 }
-  
-.navbar-ref {
-    color: #808080;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 110%;
-    margin: 0px 30px;
-}
-  
-.navbar-ul {
-    background-color: white;
+
+#navbar {
+    position: absolute;
+    background-color: transparent;
     display: flex;
     justify-content: flex-end;
     width: 100%;
 }
-  
+
 .list-inline {
-    display: flex;
-    text-decoration: none;
-    justify-content: space-around;
-    text-align: center;
-    margin: 1% 2%;
+    margin-top: 1%;
 }
-  
+
+.navbar-ref {
+    color: rgb(233, 233, 233);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 110%;
+    margin-right: 40px;
+}
+
+.navbar-ref:hover {
+    color: gray;
+    text-decoration: none;
+}
