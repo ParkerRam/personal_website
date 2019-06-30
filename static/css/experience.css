@@ -13,7 +13,6 @@ body {
     justify-content: center;
     align-items: center; 
     text-align: center;
-    border: 3px solid green;
 }
 
 #name-headline {
@@ -21,6 +20,12 @@ body {
     
 }
 
-#graphic {
+#ubc {
+    height: 30%;
+    width: 30%;
+}
 
+#fresh {
+    height: 90%;
+    width: 90%;
 }
