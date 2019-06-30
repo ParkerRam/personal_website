@@ -13,14 +13,23 @@ body {
     justify-content: center;
     align-items: center; 
     text-align: center;
-    border: 3px solid green;
 }
 
 #name-headline {
     font-size: 180%;
-
 }
 
-#graphic {
+#html {
+    height: 60%;
+    width: 60%;
+}
 
+#barbell {
+    height: 60%;
+    width: 60%;
+}
+
+#iv {
+    height: 60%;
+    width: 60%;
 }
